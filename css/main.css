@@ -1,0 +1,209 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo del HEADER */
+
+header{
+    grid-area: header;
+    height: 16vh;
+    background: radial-gradient(#f2e8cf, #ddbea9);
+    border-bottom: solid 0.1rem #3d3b3c;
+}    
+
+.logo{
+    height: 6rem;
+    width: auto;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    text-decoration: none;
+}
+
+nav ul li{
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #540b0e;
+    font-weight: 300;
+}
+
+/* Estilo del MAIN */
+
+main{
+    display: grid;
+    height: 75vh;
+    grid-template-areas: " divImg1 parrInicio parrInicio"
+                         " divImg2  parrInicio parrInicio";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.divImg1{
+    grid-area: divImg1;
+    margin: 0.5rem;
+    margin-left: 3rem;
+}
+
+.divImg2{
+    grid-area: divImg2;
+    margin: 0.5rem;
+    margin-left: 3rem;
+}
+
+main div img{
+    height: 17rem;
+    width: auto;
+    box-shadow: -2px 2px 10px #a5a5a5;
+}
+
+.parrInicio{
+    grid-area: parrInicio;
+    margin: 1rem;
+    text-align: justify;
+    margin-right: 4rem;
+}
+
+/* Estilo del footer*/
+
+footer{
+    height: 6vh;
+    border-top: solid 0.1rem #3d3b3c;
+    font-size: 0.9rem;
+    text-align: center;
+    padding-top: 2rem;
+    color: #540b0e;
+    font-weight: bold;
+    background: radial-gradient(#f2e8cf, #ddbea9) 
+}
+
+/* ESTILO MAIN SOBRE NOSOTROS*/
+
+.sobreNosotros{
+    display: grid;
+    grid-template-areas: "ganaderia agricultura arroz" 
+                         "cabana feedlot planta";
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.ganaderia{
+    grid-area: ganaderia;
+}
+
+.agricultura{
+    grid-area: agricultura;
+}
+
+.cabana{
+    grid-area: cabana;
+}
+
+.feedlot{
+    grid-area: feedlot;
+}
+
+.planta{
+    grid-area: planta;
+    justify-content: left;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-items: left;
+}
+
+.sobreNosotros div img{
+    border-radius: 2rem;
+}
+
+
+
+/*Estilo MAIN CONTACTO */
+
+.mainContacto{
+    background-image: url('../img/DSC_0621.JPG');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.ubicYcontacto{
+    border: solid #3d3b3c;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: grid;
+    grid-template-areas: " contactForm mapa";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.contactForm{
+    grid-area: contactForm;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.contactanos{
+    grid-area: contactanos;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: left;
+    color: #540b0e;
+    opacity: 100%;
+}
+
+.mail{
+    grid-area: mail;
+}
+
+.numero{
+    grid-area: numero;
+}
+
+.texto{
+    grid-area: texto;
+}
+
+.mainContacto input{
+    border: 0.1rem solid #3d3b3c;
+    height: 1.6rem;
+    width: 20rem;
+    padding: 0.6rem;
+    margin: 0.6rem;
+}
+
+.mainContacto .texto input {
+    height: 4.5rem;
+    margin-top: 0%;
+    margin-top: 0.3rem;
+}
+
+.mapa{
+    grid-area: mapa;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
